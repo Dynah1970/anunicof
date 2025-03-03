@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio de Créditos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            margin: auto;
+            background: url('background.jpg') no-repeat center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .animated-lines {
+            margin-top: 20px;
+        }
+        .line {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    animation: move 1.5s infinite alternate ease-in-out;
+}
+
+        .line:nth-child(1) { background: #15c59f; animation-delay: 0s; }
+        .line:nth-child(2) { background: #4f78ff; animation-delay: 0.3s; }
+        .line:nth-child(3) { background: #ff4fa6; animation-delay: 0.6s; }
+        .line:nth-child(4) { background: #ffcc4f; animation-delay: 0.9s; }
+
+        @keyframes move {
+    from { transform: translateY(10px); opacity: 0.5; }
+    to { transform: translateY(-10px); opacity: 1; }
+}
+
+
+        .partners {
+    margin-top: 20px;
+    padding: 0; /* Se elimina el relleno */
+    border-radius: 0; /* Sin bordes redondeados */
+    box-shadow: none; /* Se elimina la sombra */
+    width: 90%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none; /* Se quita el fondo blanco */
+}
+
+        .partners p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .partners-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .partners img {
+    width: 38%; /* Ajusta este valor */
+    max-width: 200px; /* Ajusta este valor */
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+        .info {
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .whatsapp {
+            font-size: 16px;
+            font-weight: bold;
+            color: #25d366;
+        }
+
+        /* Ajuste para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .partners-container {
+                flex-direction: column;
+            }
+            .partners img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">PRÉSTAMOS PARA PERSONAL DE GOBIERNO, JUBILADOS , PENSIONADOS Y ACTIVOS</h2>
+        <div class="animated-lines">
+            <div class="line">TRÁMITE GRATUITO</div>
+            <div class="line">DISPERSIÓN EN 24 HRS</div>
+            <div class="line">EXCELENTES PROMOCIONES</div>
+            <div class="line">TRÁMITE DIGITAL</div>
+        </div>
+
+        <div class="partners">
+            <p>Trabajamos con:</p>
+            <div class="partners-container">
+                <img src="Diseño_sin_título__3_resized.png" alt="Institución 1">
+                <img src="WhatsApp Image 2025-03-03 at 4.07.45 PM.jpeg" alt="Institución 2">
+            </div>
+        </div>
+
+        <div class="info">
+            <p>⭐ Vía Nómina | ⭐ Domiciliado | ⭐ Compra de Deuda</p>
+            <p class="whatsapp">📲 WhatsApp: <a href="https://wa.me/5637405335" style="color: #25d366; text-decoration: none;">5637405335</a></p>
+            <p>*Aplica Restricciones*</p>
+        </div>
+    </div>
+
+</body>
+</html>
